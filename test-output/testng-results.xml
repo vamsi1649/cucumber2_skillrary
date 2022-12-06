@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-03T11:36:00Z" name="Default suite" finished-at="2022-11-03T11:36:31Z" duration-ms="30556">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.test_runner@7393222f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-11-03T11:36:00Z" name="Default test" finished-at="2022-11-03T11:36:31Z" duration-ms="30556">
+      <class name="runner.test_runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.test_runner@7393222f]" started-at="2022-11-03T17:06:00Z" name="setUpClass" finished-at="2022-11-03T17:06:02Z" duration-ms="1442" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3e4e4c1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.test_runner@7393222f]" started-at="2022-11-03T17:06:02Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-03T17:06:18Z" duration-ms="15853" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To Test login functionality with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test skillrary]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [SkillRary Courses] but found [SkillRary Ecommerce]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [SkillRary Courses] but found [SkillRary Ecommerce]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at definition.step_definition.i_should_see_the_username_as(step_definition.java:60)
+	at ✽.I should see the username as "SkillRary Ecommerce"(file:///C:/Users/LENOVO/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/cucumber2/src/test/resources/login/login.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.test_runner@7393222f]" started-at="2022-11-03T17:06:18Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-03T17:06:31Z" duration-ms="13170" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To Test login functionality with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Test skillrary]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.test_runner@7393222f]" started-at="2022-11-03T17:06:31Z" name="tearDownClass" finished-at="2022-11-03T17:06:31Z" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.test_runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
